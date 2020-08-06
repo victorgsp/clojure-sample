@@ -1,7 +1,10 @@
 (ns clojure-sample.core
-  (:gen-class))
+
+  (:gen-class)
+  (:require [clojure-sample.protocols :as protocols]
+            [clojure-sample.references :as references]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (protocols/start-sample)
+  (references/start-sample))
