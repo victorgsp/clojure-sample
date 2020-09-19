@@ -1,4 +1,8 @@
-(ns clojure-sample.a)
+(ns clojure-sample.a
+  (:require [clojure-sample.b :as b]))
 
-(defn foo []
-  (b/bar 1))
+(defn foq []
+  (b/foq 1))
+
+(defn fob []
+  )

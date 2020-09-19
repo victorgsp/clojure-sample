@@ -1,4 +1,5 @@
 (ns clojure-sample.b)
 
-(defn bar [a]
-  a)
+(def abc 123)
+
+(defn foq [a] 123)

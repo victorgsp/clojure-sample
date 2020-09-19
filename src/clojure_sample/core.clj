@@ -1,10 +1,11 @@
 (ns clojure-sample.core
-
   (:gen-class)
   (:require [clojure-sample.protocols :as protocols]
-            [clojure-sample.references :as references]))
+            [clojure-sample.references :as references]
+            [clojure-sample.a :as a]))
 
 (defn -main
-  [& args]
+  [& _args]
   (protocols/start-sample)
-  (references/start-sample))
+  (references/start-sample)
+  (a/foq))
