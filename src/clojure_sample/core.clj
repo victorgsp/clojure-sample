@@ -2,10 +2,10 @@
   (:gen-class)
   (:require [clojure-sample.protocols :as protocols]
             [clojure-sample.references :as references]
-            [clojure-sample.a :as a]))
+            [clojure-sample.c :as c]))
 
 (defn -main
   [& _args]
   (protocols/start-sample)
   (references/start-sample)
-  (a/foq))
+  (c/foq))
