@@ -4,8 +4,7 @@
 
 (def word 1)
 
-(defn test
-  []
+(defn test []
   (c-alias/abcd)
   foq)
 
