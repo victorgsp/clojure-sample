@@ -5,6 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [nubank/matcher-combinators "3.1.2"]
+                 [org.clojure/core.async "1.3.610"]
                  [prismatic/schema "1.1.12"]]
   :main ^:skip-aot clojure-sample.core
   :target-path "target/%s"
