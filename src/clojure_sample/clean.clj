@@ -1,6 +1,4 @@
-(ns clojure-sample.clean
-  (:require [clojure.set :as bla]
-            [clojure.set :as blow]))
+(ns clojure-sample.clean)
 
 (def ^:private bla 1)
 
@@ -11,9 +9,6 @@
 (def hello "hello")
 
 (def abcde 1)
-(def abcde 2)
-(def abcde 3)
-(def abcde 4)
 
 (comment
   `bar)

@@ -15,4 +15,6 @@
 
 (deftest matcher-test
   (testing "testing matcher report"
-    (is (match? {:bla 1 :blow {:f 2}} {:blow {:bla {:a 2}}}))))
+    (is (match?
+          {:bla 1 :blow {:f 2}}
+          {:blow {:bla {:a 2}}}))))

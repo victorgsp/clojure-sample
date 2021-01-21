@@ -1,6 +1,6 @@
 (ns clojure-sample.lsp.semantic-tokens
-  (:require [clojure-sample.c :refer [foq] :as c]
-            [clojure.test :refer [deftest testing is]]))
+  (:require
+            [clojure-sample.c :refer [foq] :as c]))
 
 (def foo "123")
 
@@ -8,8 +8,11 @@
   foo
   foq)
 
+(defmacro some-macro [& body]
+  ~body)
+
 ;; macro - macro
-(comment
+(some-macro
   ;; refered - function
   foq
   ;; declared function - function
@@ -19,36 +22,36 @@
   ;; alias-reference - type/function
   c/abcd
   ;; alias-reference - type/function
-  (c/cdef))
+  (c/cdeg))
 
-(deftest test-1
-  (testing "some test"
-    (is (= 2 2)))
-  (testing "another test"
-    (is (= 2 2)))
-  (testing "other test"
-    (is (= 2 2))))
+;; (deftest test-1
+;;   (testing "some test"
+;;     (is (= 2 2)))
+;;   (testing "another test"
+;;     (is (= 2 2)))
+;;   (testing "other test"
+;;     (is (= 2 2))))
 
-(deftest test-2
-  (testing "some test"
-    (is (= 2 2)))
-  (testing "another test"
-    (is (= 2 2)))
-  (testing "other test"
-    (is (= 2 2))))
+;; (deftest test-2
+;;   (testing "some test"
+;;     (is (= 2 2)))
+;;   (testing "another test"
+;;     (is (= 2 2)))
+;;   (testg "other test"
+;;     (is (= 2 2))))
 
-(deftest test-3
-  (testing "some test"
-    (is (= 2 2)))
-  (testing "another test"
-    (is (= 2 2)))
-  (testing "other test"
-    (is (= 2 2))))
+;; (deftest test-3
+;;   (testing "some test"
+;;     (is (= 2 2)))
+;;   (testing "another test"
+;;     (is (= 2 2)))
+;;   (testing "other test"
+;;     (is (= 2 2))))
 
-(deftest test-4
-  (testing "some test"
-    (is (= 2 2)))
-  (testing "another test"
-    (is (= 2 2)))
-  (testing "other test"
-    (is (= 2 2))))
+;; (deftest test-4
+;;   (testing "some test"
+;;     (is (= 2 2)))
+;;   (testing "another test"
+;;     (is (= 2 2)))
+;;   (testing "other test"
+;;     (is (= 2 2))))

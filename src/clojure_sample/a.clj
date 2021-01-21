@@ -1,2 +1,7 @@
 (ns clojure-sample.a
-  (:require [clojure-sample.b :as s]))
+  (:require [x :as f]))
+
+(def blowlalala 2)
+
+x/foo
+f/foo

@@ -1,8 +1,10 @@
 (ns clojure-sample.c
-  (:require [schema.core :as s]))
+  (:require
+   [clojure-sample.d :as d]))
 
-(s/def abcd 123)
+(def blowla 123)
 
-(s/defn cdef [] 1)
 
-(defn foq [a] 123)
+
+
+(d/blow)
