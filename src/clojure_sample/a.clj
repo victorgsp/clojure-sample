@@ -1,7 +1,10 @@
 (ns clojure-sample.a
-  (:require [x :as f]))
+  (:require [rewrite-clj.zip :as z]))
 
-(def blowlalala 2)
+(println "asd")
 
-x/foo
-f/foo
+
+(map identity [])
+
+
+(z/of-string "")

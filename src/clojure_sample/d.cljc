@@ -7,4 +7,4 @@
     1))
 
 (defmacro blowert [a b]
-  1)
+  `a)

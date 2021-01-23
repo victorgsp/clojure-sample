@@ -1,5 +1,4 @@
-(ns clojure-sample.references
-  (:require [schema.core :as s]))
+(ns clojure-sample.references)
 
 (defn- baz
   [a b]
@@ -13,13 +12,13 @@
 
 (def app)
 
-(s/defn ^:private another-private-function
-  [a b]
-  (another-private-function a b))
+;; (s/defn ^:private another-private-function
+;;   [a b]
+;;   (another-private-function a b))
 
-(s/defn another-function
-  [a b]
-  (another-private-function a b))
+;; (s/defn another-function
+;;   [a b]
+;;   (another-private-function a b))
 
 (defn start-sample
   []

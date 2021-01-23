@@ -1,27 +1,27 @@
 (ns clojure-sample.lsp.macros
-  (:require [schema.core :as s]
-            [common-graphql.lacinia.sweet :as gql]
+  #_(:require [schema.core :as s]
+            ;; [common-graphql.lacinia.sweet :as gql]
             [midje.sweet :refer :all]))
 
-(s/defschema SomeSchema {:a 1})
+;; (s/defschema SomeSchema {:a 1})
 
-(gql/defenum SomeEnum
-  "Person or company customer"
-  [:Bar :FOO])
+;; (gql/defenum SomeEnum
+;;   "Person or company customer"
+;;   [:Bar :FOO])
 
-(s/defn foo :- s/String
-  [a :- SomeSchema
-   b :- s/Int]
-  SomeEnum
-  (+ (:a a) b))
+;; (s/defn foo :- s/String
+;;   [a :- SomeSchema
+;;    b :- s/Int]
+;;   SomeEnum
+;;   (+ (:a a) b))
 
-(foo 1 2)
+;; (foo 1 2)
 
-(defn bar []
-  1)
+;; (defn bar []
+;;   1)
 
-(bar)
+;; (bar)
 
-(facts "foo"
-  (fact "bar"
-    {:a 2} => {:a 2}))
+;; (facts "foo"
+;;   (fact "bar"
+;;     {:a 2} => {:a 2}))

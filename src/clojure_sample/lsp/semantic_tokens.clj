@@ -8,11 +8,10 @@
   foo
   foq)
 
-(defmacro some-macro [& body]
-  ~body)
+(defmacro some-macro [& _body])
 
 ;; macro - macro
-(some-macro
+(comment
   ;; refered - function
   foq
   ;; declared function - function
