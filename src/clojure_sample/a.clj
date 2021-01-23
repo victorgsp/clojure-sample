@@ -1,5 +1,6 @@
 (ns clojure-sample.a
-  (:require [rewrite-clj.zip :as z]))
+  #_(:require [rewrite-clj.zip :as z]
+            [rewrite-clj.parser.core :as rpc]))
 
 (println "asd")
 
@@ -7,4 +8,5 @@
 (map identity [])
 
 
-(z/of-string "")
+#_(binding [rpc/*parse-anyway* true]
+  (z/of-string "(def a 123) asd/ (def b 345)"))

@@ -43,4 +43,4 @@
 
 
 ;; (time (async-crawl))
-(time (async-crawl-2))
+;; (time (async-crawl-2))

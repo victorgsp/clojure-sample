@@ -10,7 +10,7 @@
 (defn abcdefg [a b]
   (+ a b))
 
-;; (s/defn foo :- s/String
+;; (s/defn foo :- s/Str
 ;;   [some-number :- s/Int
 ;;    other-number :- s/Int]
 ;;   1)

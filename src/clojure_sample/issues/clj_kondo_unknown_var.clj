@@ -1,4 +1,4 @@
 (ns clojure-sample.issues.clj-kondo-unknown-var
-  (:require [digest :as digest]))
+  #_(:require [digest :as digest]))
 
-(digest/md5 "foo")
+#_(digest/md5 "foo")
