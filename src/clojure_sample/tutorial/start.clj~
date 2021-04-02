@@ -1,9 +1,0 @@
-(ns clojure-sample.tutorial.start
-  (:require [clojure-sample.tutorial.foo-feature :as foo]))
-
-(defn -main
-  [& _args]
-  (foo/sum 1 2))
-
-(defn other-function []
-  (foo/sum 2 4))
