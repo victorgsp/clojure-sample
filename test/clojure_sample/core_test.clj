@@ -1,7 +1,7 @@
 (ns clojure-sample.core-test
-  (:require [clojure-sample.core :refer :all]
-            [clojure.test :refer [deftest testing is]]
-            [matcher-combinators.test :refer [match?]]))
+  (:require
+   [clojure.test :refer [deftest is testing]]
+   [matcher-combinators.test :refer [match?]]))
 
 (deftest a-test
   (testing "FIXME, I fail."
