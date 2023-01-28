@@ -1,5 +1,6 @@
 {:deps {org.clojure/clojure {:mvn/version "1.10.3"}
         org.clojure/clojurescript {:mvn/version "1.10.758"}
+        org.clojure/core.async {:mvn/version "1.5.648"}
         nubank/matcher-combinators {:mvn/version "3.3.1"}}
  :paths ["src" "resources"]
  :aliases {:test {:extra-paths ["test"]}}}
