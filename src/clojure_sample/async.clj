@@ -1,5 +1,6 @@
 (ns clojure-sample.async
-  (:require [clojure.core.async :as async :refer [<!! >! >!! <! go chan]]))
+  (:require [clojure.core.async :as async :refer [<!! >! >!! <! go chan]]
+            [com.stuartsierra.component :as component]))
 
 (defn fast-crawl []
   (Thread/sleep 4000)
@@ -14,6 +15,8 @@
 (defn huge-crawl []
   (Thread/sleep 4000)
   (println "c")
+  (component/using (clojure-sample.component-example/new-component-test) [:circuit-breaker-factory :config])
+
   {:c 3})
 
 (defn normal-crawl []
